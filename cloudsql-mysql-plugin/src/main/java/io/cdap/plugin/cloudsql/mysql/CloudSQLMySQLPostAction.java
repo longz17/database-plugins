@@ -22,7 +22,7 @@ import io.cdap.cdap.api.annotation.Name;
 import io.cdap.cdap.api.annotation.Plugin;
 import io.cdap.cdap.etl.api.FailureCollector;
 import io.cdap.cdap.etl.api.PipelineConfigurer;
-import io.cdap.cdap.etl.api.action.Action;
+import io.cdap.cdap.etl.api.batch.PostAction;
 import io.cdap.plugin.db.batch.action.AbstractQueryAction;
 import io.cdap.plugin.db.batch.action.QueryActionConfig;
 
@@ -32,9 +32,9 @@ import javax.annotation.Nullable;
 /**
  * Action that runs a MySQL command on a CloudSQL instance database.
  */
-@Plugin(type = Action.PLUGIN_TYPE)
+@Plugin(type = PostAction.PLUGIN_TYPE)
 @Name(CloudSQLMySQLConstants.PLUGIN_NAME)
-@Description("Action that runs a MySQL command on a CloudSQL instance database")
+@Description("Post Action that runs a MySQL command on a CloudSQL instance database")
 public class CloudSQLMySQLPostAction extends AbstractQueryAction {
 
     private final CloudSQLMySQLQueryActionConfig cloudsqlMysqlQueryActionConfig;
