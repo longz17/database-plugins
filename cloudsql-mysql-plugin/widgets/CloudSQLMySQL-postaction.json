@@ -2,7 +2,7 @@
   "metadata": {
     "spec-version": "1.5"
   },
-  "display-name": "CloudSQL MySQL Execute",
+  "display-name": "CloudSQL MySQL Post Execute",
   "configuration-groups": [
     {
       "label": "Basic",

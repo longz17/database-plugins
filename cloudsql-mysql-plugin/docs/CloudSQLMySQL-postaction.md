@@ -1,15 +1,15 @@
-# CloudSQL MySQL Action
+# CloudSQL MySQL Post Action
 
 
 Description
 -----------
-Action that runs a MySQL command on a CloudSQL MySQL instance.
+Post Action that runs a MySQL command on a CloudSQL MySQL instance.
 
 
 Use Case
 --------
-The action can be used whenever you want to run a MySQL command before or after a data pipeline.
-For example, you may want to run a SQL update command on a database before the pipeline source pulls data from tables.
+The action can be used whenever you want to run a MySQL command after a data pipeline.
+For example, you may want to run a SQL update/drop table command on a database after the pipeline writes data into final tables from temp tables.
 
 
 Properties
